@@ -1,0 +1,20 @@
+{
+  "sourceIdentity": true,
+  "nativeClaimFlow": true,
+  "webLocksTwoTabClaims": true,
+  "nativeGameCloseAndReopen": true,
+  "errors": [],
+  "simultaneousClaimsBalance": 8,
+  "paidEffectBalance": 3,
+  "zeroBalanceGameLaunch": true,
+  "reducedMotionNoCharge": true,
+  "unsupportedLocksReadOnly": true,
+  "corruptPreserved": true,
+  "widths": [
+    320,
+    375,
+    414,
+    768,
+    1280
+  ]
+}
