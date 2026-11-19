@@ -1,0 +1,20 @@
+{
+  "sourceIdentity": true,
+  "tokenBalancePreserved": true,
+  "nativeCabinetClick": true,
+  "errors": [],
+  "cabinets": 123,
+  "aisles": 4,
+  "realGameLaunch": "cyber-pulse-rhythm_babin",
+  "filterParity": true,
+  "keyboardReturnFocus": true,
+  "viewsPersisted": true,
+  "widths": [
+    320,
+    375,
+    414,
+    700,
+    768,
+    1280
+  ]
+}
