@@ -1,0 +1,51 @@
+{
+  "pass": true,
+  "results": {
+    "actualSdkSession": {
+      "scoreUpdatesDoNotPay": true,
+      "wrongSourceAndTokenRejectedByParent": true,
+      "finalFloor": 123,
+      "duplicateEndDoesNotRepay": true,
+      "rawTokenNotStored": true,
+      "closeWithoutEndDoesNotPay": true,
+      "invalidEndDoesNotPay": true,
+      "latestScoreFallback": 3
+    },
+    "trailNativePixelsAndIdleRaf": true,
+    "nativeSound": {
+      "realOscillators": true,
+      "equippedTriangle": true,
+      "masterMute": true,
+      "zeroVolume": true,
+      "midSequenceMute": true,
+      "reducedMotion": true
+    },
+    "nativeKeyboardPersistenceAndLayouts": [
+      320,
+      375,
+      430,
+      850,
+      1360
+    ],
+    "realCrossTabWebLocks": {
+      "twoAwardsTotal": 30,
+      "sharedBalance": 86,
+      "equipmentStorageEvent": true,
+      "samePrizeChargedOnce": true
+    },
+    "hallOfFameCounter": true,
+    "failurePreservation": {
+      "quota": true,
+      "retrySameSession": true,
+      "malformed": true,
+      "lockDenied": true,
+      "storageDenied": true,
+      "freeGameLaunchWithMalformedWallet": true,
+      "unrelatedAndDailyWalletUntouched": true
+    },
+    "servedSha256": "74cf09c06871e3e196b7f4a77092454fbbf67abc46439e785c6991ef803b7b8d"
+  },
+  "errors": [],
+  "failed": [],
+  "fixture": "Legacy Google Fonts/Lucide CDN responses only; native app, real SDK iframe handshake/events, storage/Web Locks/Canvas/Web Audio are exercised. Scores are controlled via the real SDK; physical audio output is not asserted."
+}

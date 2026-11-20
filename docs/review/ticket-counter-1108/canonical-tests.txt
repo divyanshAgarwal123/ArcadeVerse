@@ -1,0 +1,182 @@
+
+> arcadeverse@1.2.0 test
+> node scripts/verify-catalog-syntax.js && node scripts/verify-leaderboard-highlight.js && node scripts/test-playlist-codes.js && node scripts/test-time-warp-replay.mjs && node --test scripts/test-playtime-heatmap.js && node --test scripts/test-dev-asset-auditor.js && node --test scripts/test-arcade-token-dispenser.js && node --test scripts/test-isometric-arcade-room.js && node --test scripts/test-leaderboard-spectrum.js && node --test scripts/test-arcade-ticket-dispenser.js
+
+
+========================================================
+   ArcadeVerse Core & Catalog Syntax Integrity Suite
+========================================================
+
+  [CHECKING] Validating JavaScript file syntax via Node compiler:
+  [OK] [SYNTAX OK] assets/js/app.js
+  [OK] [SYNTAX OK] assets/js/games-registry.js
+  [OK] [SYNTAX OK] scripts/validate-games.js
+  [OK] [SYNTAX OK] scripts/build-registry.js
+
+  [INSPECTING] assets/js/app.js architectural integrity...
+  [OK] renderAutocomplete definition located.
+  [OK] Faceted Filters section located.
+  [OK] renderAutocomplete curly brace balance verified (59 open, 59 close).
+  [OK] Found critical runtime hook: renderGames()
+  [OK] Found critical runtime hook: buildTagChips()
+  [OK] Found critical runtime hook: document.addEventListener("DOMContentLoaded"
+  [OK] Found responsive orientationchange listener for game modal.
+
+  [INSPECTING] assets/js/games-registry.js payload integrity...
+  [OK] GAMES_REGISTRY array successfully declared.
+
+========================================================
+Audit Finished: 10 Passed, 0 Errors
+========================================================
+
+[SUCCESS] All catalog & core syntax audits passed successfully with zero errors!
+
+
+========================================================
+   Leaderboard Search Substring Highlight Test Suite
+========================================================
+
+  [PASS] escapeRegex helper implemented
+  [PASS] highlightMatch helper implemented
+  [PASS] 200ms search input debounce implemented
+  [PASS] DisplayName wrapped with highlightMatch
+  [PASS] GitHub Handle wrapped with highlightMatch
+  [PASS] <mark class="search-highlight"> wrapper used
+  [PASS] Case-insensitive name match: <mark class="search-highlight">Deba</mark>smita Bose
+  [PASS] Number handle match: Babin<mark class="search-highlight">123</mark>456
+  [PASS] Empty query leaves text untouched: Normal User
+  [PASS] Regex special characters safely escaped: Special <mark class="search-highlight">[User]</mark>
+  [PASS] .search-highlight CSS class defined in pages.css
+  [PASS] .search-highlight cyan background present
+  [PASS] .search-highlight dark contrast text present
+
+========================================================
+Results: 13 Passed, 0 Failed
+========================================================
+
+[SUCCESS] All Leaderboard substring highlight checks passed successfully!
+
+✔ exports compact UTF-8 AVPL codes and imports with fresh metadata (2.878958ms)
+✔ deduplicates game IDs in original order and supports empty playlists (0.646583ms)
+✔ rejects malformed encoding, JSON, UTF-8 and prefixes without changing state (0.589625ms)
+✔ rejects invalid shapes, oversized names/lists, unknown IDs and extra metadata atomically (1.220792ms)
+✔ storage failure does not change in-memory playlists or dispatch success (0.502667ms)
+✔ export rejects a missing playlist or stale registry IDs (0.361625ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10.157916
+✔ timestamp interpolation and plate timing at 30 Hz (1.346792ms)
+✔ timestamp interpolation and plate timing at 60 Hz (0.645667ms)
+✔ timestamp interpolation and plate timing at 120 Hz (0.551417ms)
+✔ timestamp interpolation and plate timing at 144 Hz (1.122875ms)
+✔ timestamp interpolation and plate timing at 240 Hz (0.62725ms)
+✔ irregular elapsed updates interpolate instead of consuming one snapshot per call (0.174834ms)
+✔ paused update does not advance playback, and restart clears its timeline (0.252375ms)
+✔ rewind restores recording clock and new snapshots stay ordered without wall-time gaps (0.132291ms)
+✔ ghost owns detached snapshots and replacement resets cursor/elapsed (0.116416ms)
+✔ history and selected replay are bounded by six and five simulation seconds (0.301125ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9.522584
+✔ records real launches, counts repeat plays and selects the top title (1.854625ms)
+✔ treats IDs as data, including prototype-like IDs, and preserves unrelated keys (0.121708ms)
+✔ builds exactly 52 weeks of unique local dates with future days marked (0.3065ms)
+✔ local-day calendar math survives year, leap-year and DST boundaries (245.56875ms)
+✔ retains only the last 370 calendar days as launches arrive (76.395458ms)
+✔ uses four nonzero intensity tiers without inventing baseline activity (0.128292ms)
+✔ refuses malformed or inconsistent storage without overwriting it (0.174167ms)
+✔ fails closed on duplicate day/game records and oversized titles (0.11225ms)
+✔ storage denial and quota failures leave the previous state intact (0.113458ms)
+✔ rejects invalid games, dates and saturated daily histories (0.959834ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 414.112834
+✔ redacts query strings, fragments and embedded credentials from report URLs (1.001916ms)
+✔ restricts probes to same-origin public assets and games inside the deployment prefix (0.48975ms)
+✔ external and opaque resources stay unknown rather than becoming fake 404s (0.122458ms)
+✔ flags unencoded characters while preserving the actual normalized probe URL (0.090875ms)
+✔ discovers CSS imports and URL assets without executing inline data or fragment references (0.885541ms)
+✔ normal mode installs no observers, event listeners, globals or UI (1.87275ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 94.229959
+✔ grants five starter tokens once and preserves unrelated profile storage (1.014666ms)
+✔ claims once per UTC day, including the midnight boundary and rollback guard (0.158458ms)
+✔ redeems once, persists ownership, and equips only an owned reward in its slot (0.784333ms)
+✔ rejects insufficient funds and unknown operations without deducting anything (0.135958ms)
+✔ stores the optional preference without charging and validates its type (0.084875ms)
+✔ keeps corrupt, inconsistent and non-integer ledgers intact (0.3755ms)
+✔ fails closed on quota, denied storage and invalid clocks (0.119709ms)
+✔ bounds balances and revisions without persisting a partial deduction (0.084292ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 93.426083
+✔ assigns categories and tags to deterministic aisles with a general action fallback (0.754542ms)
+✔ groups each known game once, preserves filtered sort order, and treats IDs as data (0.712708ms)
+✔ sizes rows for uneven aisle populations without overflowing the floor (0.207209ms)
+✔ fits the whole projected room and bounds extreme pan and zoom inputs (0.118458ms)
+✔ retains finite camera geometry at narrow and temporarily collapsed sizes (0.104542ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 85.57875
+✔ verifies 16 discrete ISO frequency bands configuration (0.888583ms)
+✔ ambient chiptune wave generates smooth bounded amplitudes between 0.1 and 1.0 (0.302959ms)
+✔ peak meter jumps immediately to spike and holds before gravity decay (0.084292ms)
+✔ discrete LED segment color distribution matches Green -> Amber -> Red tiers (0.07425ms)
+✔ maps raw Web Audio AnalyserNode frequency bins to 16 normalized bands (0.076708ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 86.874541
+✔ floors final scores at boundaries, including fractional scores and zero (1.6305ms)
+✔ retains zero-score receipts and refuses replay even with a different final score (0.127041ms)
+✔ rejects invalid scores and receipts without creating or changing a ledger (0.190292ms)
+✔ sums independent opened sessions against independently computed totals (3.222583ms)
+✔ redemption subtracts the listed cost once and only owned slot prizes equip (1.155958ms)
+✔ insufficient funds, unowned prizes and unknown actions preserve storage (0.106292ms)
+✔ read and write denials never report an award or lose the previous ledger (0.122333ms)
+✔ preserves malformed, inconsistent, duplicate and oversized ledgers (0.982042ms)
+✔ balance, receipt and revision limits preserve the complete wallet (10.103875ms)
+✔ writes only the ticket key, persisting hashes without raw session tokens (0.16525ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 109.374334

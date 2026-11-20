@@ -1,0 +1,13 @@
+{
+  "sourceHead": "bf34a0994c1bf9e746f6b2d881944b9a8e08d078",
+  "parentMain": "90c014cd70113e8e8b7966c23466e763a28845e6",
+  "sourceSha256": {
+    "assets/js/arcade-ticket-dispenser.js": "74cf09c06871e3e196b7f4a77092454fbbf67abc46439e785c6991ef803b7b8d",
+    "assets/css/arcade-ticket-dispenser.css": "08948f676db9c311cc49a1e604a2c96e9b45bb8027acc305ec8a2a483ea97a51",
+    "scripts/test-arcade-ticket-dispenser.js": "0360ea38e869af062f2ae3edcf8d7f9a4f971d738aa5012f326efb51f9b501df",
+    "index.html": "8048cfeff7b488b05dba8c228415897b20511c9a1fae42ed14dda710ca9de8d2",
+    "leaderboard.html": "feceeda3a6e16b5f2157d79a07333108cb60baf5fdcadc28187bcfd14820ec2f",
+    "package.json": "d9339cb3e22ceb0629c0c8af0c38ad82a316ed06b9a324635613370d8109c092"
+  },
+  "strictAssetOutputMatchesCleanMain": true
+}
