@@ -1,0 +1,34 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "actualCatalogAndDocsEntry": true,
+      "defaultOff": true,
+      "liveTreeAndSearch": true,
+      "realCrossTabUpdates": true,
+      "actualGameModalLaunchAndClose": true,
+      "actualPlayCountDiff": true,
+      "nestedCreatedModifiedDeletedDiff": true,
+      "xssAndUnrelatedCanarySafe": true,
+      "nativeConfirmCancel": true,
+      "staleResetRefused": true,
+      "failedResetPreservesValueAndFocus": true,
+      "confirmedSingleKeyReset": true,
+      "deniedSnapshotPreservesBaseline": true,
+      "endSessionDropsBaseline": true,
+      "nativeEscapeAndReturnFocus": true,
+      "nativeTabSpaceEnterAndLiveFocusRetention": true,
+      "layouts": [
+        320,
+        375,
+        430,
+        850,
+        1360
+      ],
+      "servedSha256": "4501cadc9b07777a2f9865ddd6a4ea0b763f3d7fdfce33417f30ef0112fe4457"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "fixture": "Only legacy Google Fonts and Lucide CDN responses are replaced locally; application/game/storage code is unchanged."
+}
