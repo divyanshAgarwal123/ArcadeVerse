@@ -1,0 +1,179 @@
+
+> arcadeverse@1.2.0 test
+> node scripts/verify-catalog-syntax.js && node scripts/verify-leaderboard-highlight.js && node scripts/test-playlist-codes.js && node scripts/test-time-warp-replay.mjs && node --test scripts/test-playtime-heatmap.js && node --test scripts/test-dev-asset-auditor.js && node --test scripts/test-arcade-token-dispenser.js && node --test scripts/test-isometric-arcade-room.js && node --test scripts/test-leaderboard-spectrum.js && node --test scripts/test-arcade-wallpaper-generator.js
+
+
+========================================================
+   ArcadeVerse Core & Catalog Syntax Integrity Suite
+========================================================
+
+  [CHECKING] Validating JavaScript file syntax via Node compiler:
+  [OK] [SYNTAX OK] assets/js/app.js
+  [OK] [SYNTAX OK] assets/js/games-registry.js
+  [OK] [SYNTAX OK] scripts/validate-games.js
+  [OK] [SYNTAX OK] scripts/build-registry.js
+
+  [INSPECTING] assets/js/app.js architectural integrity...
+  [OK] renderAutocomplete definition located.
+  [OK] Faceted Filters section located.
+  [OK] renderAutocomplete curly brace balance verified (59 open, 59 close).
+  [OK] Found critical runtime hook: renderGames()
+  [OK] Found critical runtime hook: buildTagChips()
+  [OK] Found critical runtime hook: document.addEventListener("DOMContentLoaded"
+  [OK] Found responsive orientationchange listener for game modal.
+
+  [INSPECTING] assets/js/games-registry.js payload integrity...
+  [OK] GAMES_REGISTRY array successfully declared.
+
+========================================================
+Audit Finished: 10 Passed, 0 Errors
+========================================================
+
+[SUCCESS] All catalog & core syntax audits passed successfully with zero errors!
+
+
+========================================================
+   Leaderboard Search Substring Highlight Test Suite
+========================================================
+
+  [PASS] escapeRegex helper implemented
+  [PASS] highlightMatch helper implemented
+  [PASS] 200ms search input debounce implemented
+  [PASS] DisplayName wrapped with highlightMatch
+  [PASS] GitHub Handle wrapped with highlightMatch
+  [PASS] <mark class="search-highlight"> wrapper used
+  [PASS] Case-insensitive name match: <mark class="search-highlight">Deba</mark>smita Bose
+  [PASS] Number handle match: Babin<mark class="search-highlight">123</mark>456
+  [PASS] Empty query leaves text untouched: Normal User
+  [PASS] Regex special characters safely escaped: Special <mark class="search-highlight">[User]</mark>
+  [PASS] .search-highlight CSS class defined in pages.css
+  [PASS] .search-highlight cyan background present
+  [PASS] .search-highlight dark contrast text present
+
+========================================================
+Results: 13 Passed, 0 Failed
+========================================================
+
+[SUCCESS] All Leaderboard substring highlight checks passed successfully!
+
+✔ exports compact UTF-8 AVPL codes and imports with fresh metadata (2.696625ms)
+✔ deduplicates game IDs in original order and supports empty playlists (0.493709ms)
+✔ rejects malformed encoding, JSON, UTF-8 and prefixes without changing state (0.54625ms)
+✔ rejects invalid shapes, oversized names/lists, unknown IDs and extra metadata atomically (1.216833ms)
+✔ storage failure does not change in-memory playlists or dispatch success (0.486459ms)
+✔ export rejects a missing playlist or stale registry IDs (0.36ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9.745292
+✔ timestamp interpolation and plate timing at 30 Hz (1.444375ms)
+✔ timestamp interpolation and plate timing at 60 Hz (0.700875ms)
+✔ timestamp interpolation and plate timing at 120 Hz (0.665167ms)
+✔ timestamp interpolation and plate timing at 144 Hz (0.95475ms)
+✔ timestamp interpolation and plate timing at 240 Hz (0.65175ms)
+✔ irregular elapsed updates interpolate instead of consuming one snapshot per call (0.155125ms)
+✔ paused update does not advance playback, and restart clears its timeline (0.260416ms)
+✔ rewind restores recording clock and new snapshots stay ordered without wall-time gaps (0.137167ms)
+✔ ghost owns detached snapshots and replacement resets cursor/elapsed (0.124458ms)
+✔ history and selected replay are bounded by six and five simulation seconds (0.256959ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9.337916
+✔ records real launches, counts repeat plays and selects the top title (1.660416ms)
+✔ treats IDs as data, including prototype-like IDs, and preserves unrelated keys (0.090209ms)
+✔ builds exactly 52 weeks of unique local dates with future days marked (0.304ms)
+✔ local-day calendar math survives year, leap-year and DST boundaries (236.412458ms)
+✔ retains only the last 370 calendar days as launches arrive (72.228375ms)
+✔ uses four nonzero intensity tiers without inventing baseline activity (0.12025ms)
+✔ refuses malformed or inconsistent storage without overwriting it (0.169167ms)
+✔ fails closed on duplicate day/game records and oversized titles (0.111041ms)
+✔ storage denial and quota failures leave the previous state intact (0.109875ms)
+✔ rejects invalid games, dates and saturated daily histories (0.927ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 396.315292
+✔ redacts query strings, fragments and embedded credentials from report URLs (0.832334ms)
+✔ restricts probes to same-origin public assets and games inside the deployment prefix (0.399541ms)
+✔ external and opaque resources stay unknown rather than becoming fake 404s (0.102916ms)
+✔ flags unencoded characters while preserving the actual normalized probe URL (0.083291ms)
+✔ discovers CSS imports and URL assets without executing inline data or fragment references (0.803417ms)
+✔ normal mode installs no observers, event listeners, globals or UI (1.477292ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 86.221
+✔ grants five starter tokens once and preserves unrelated profile storage (1.069958ms)
+✔ claims once per UTC day, including the midnight boundary and rollback guard (0.17225ms)
+✔ redeems once, persists ownership, and equips only an owned reward in its slot (0.837875ms)
+✔ rejects insufficient funds and unknown operations without deducting anything (0.142875ms)
+✔ stores the optional preference without charging and validates its type (0.087667ms)
+✔ keeps corrupt, inconsistent and non-integer ledgers intact (0.39075ms)
+✔ fails closed on quota, denied storage and invalid clocks (0.122292ms)
+✔ bounds balances and revisions without persisting a partial deduction (0.086209ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 84.642666
+✔ assigns categories and tags to deterministic aisles with a general action fallback (0.787667ms)
+✔ groups each known game once, preserves filtered sort order, and treats IDs as data (0.703792ms)
+✔ sizes rows for uneven aisle populations without overflowing the floor (0.20575ms)
+✔ fits the whole projected room and bounds extreme pan and zoom inputs (0.118458ms)
+✔ retains finite camera geometry at narrow and temporarily collapsed sizes (0.096542ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 81.199375
+✔ verifies 16 discrete ISO frequency bands configuration (0.637167ms)
+✔ ambient chiptune wave generates smooth bounded amplitudes between 0.1 and 1.0 (0.283ms)
+✔ peak meter jumps immediately to spike and holds before gravity decay (0.079625ms)
+✔ discrete LED segment color distribution matches Green -> Amber -> Red tiers (0.072375ms)
+✔ maps raw Web Audio AnalyserNode frequency bins to 16 normalized bands (0.077208ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 81.222709
+✔ selects exactly 24 distinct actual catalog games without changing the source (1.348958ms)
+✔ seeded mixes reproduce while different seeds change the selection (0.952417ms)
+✔ duplicates and malformed metadata cannot meet the distinct-card minimum (0.266292ms)
+✔ sanitizes icon names and bounds optional category text (0.099584ms)
+✔ invalid random values fail rather than producing missing or duplicated cards (0.258834ms)
+✔ all three native resolutions contain 24 nonoverlapping complete cards (0.299584ms)
+✔ accepts only listed sizes, tints, integer intensity bounds and a boolean logo (0.171416ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 85.76475

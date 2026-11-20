@@ -1,0 +1,46 @@
+{
+  "sourceHead": "aaca56f9827d2544a1acd79c620895b992e0ebc9",
+  "mergedMain": "afae02bf19b002af8336b5f3ff955de1882aca36",
+  "sourceSha256": {
+    "assets/js/arcade-wallpaper-generator.js": "3a3c7ddfed4ddc778b2a6cb025c18385956b9da3fd1bcbe25852a728eab5da67",
+    "assets/css/arcade-wallpaper-generator.css": "8cf0cd9359fa79c4769fc4fd603b298ba878a7fcbb0289490dcb46c94f6e1887",
+    "scripts/test-arcade-wallpaper-generator.js": "d526b4ebb8bd9e2f4499a85fe51dddc0dc48b791449a02c9f5955021a28994a9",
+    "docs.html": "4cded7cab4dbf5610fc287c4a12af6241eee3930e8e3a6350f96b72f6bd504ee",
+    "package.json": "a1371df84c37da4d887c1bfa6c0f563ee993e72772b59fe112bbdde2e3bc3f27"
+  },
+  "strictAssetOutputMatchesCleanMain": true,
+  "exports": [
+    {
+      "name": "desktop-synthwave",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2178911,
+      "decodedRgbaSha256": "6c1826610b35dcaa20a12853217b75d7c5b7292e2be64bcbfd0783ed186fc99e",
+      "suggestedFilename": "arcadeverse-1920x1080-synthwave.png"
+    },
+    {
+      "name": "uhd-synthwave",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 6745265,
+      "decodedRgbaSha256": "8f684526c60143fdfb71e598478a3f3394579c4f9385c773ae2d6902aa5f86c1",
+      "suggestedFilename": "arcadeverse-3840x2160-synthwave.png"
+    },
+    {
+      "name": "phone-synthwave",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 2249924,
+      "decodedRgbaSha256": "35deedbad0c98160fe2634fe396283f6323fe41e3d2ff0c6d11499e8e38e7b9b",
+      "suggestedFilename": "arcadeverse-1080x1920-synthwave.png"
+    },
+    {
+      "name": "phone-retry",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 2249924,
+      "decodedRgbaSha256": "35deedbad0c98160fe2634fe396283f6323fe41e3d2ff0c6d11499e8e38e7b9b",
+      "suggestedFilename": "arcadeverse-1080x1920-synthwave.png"
+    }
+  ]
+}
