@@ -1,0 +1,29 @@
+{
+  "source": "b9ad2147a4f760a11a72a9556ad6be587d7763e6",
+  "parents": [
+    "aaca56f9827d2544a1acd79c620895b992e0ebc9",
+    "65f1d4e1de7cec03fc3bd58baa5e61f8704cc91a"
+  ],
+  "observedAt": "2026-11-20T17:49:38.151330+00:00",
+  "canonicalTests": "PASS",
+  "additionalStorageAndCardFlipTests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "registryCheck": {
+    "games": 124,
+    "contributors": 13,
+    "passed": true
+  },
+  "metadataIntegrity": {
+    "games": 124,
+    "mismatches": 0,
+    "missing": 0
+  },
+  "featureDiff": {
+    "files": 5,
+    "additions": 235,
+    "deletions": 1
+  },
+  "strictAssetOutputMatchesCleanMain": true
+}

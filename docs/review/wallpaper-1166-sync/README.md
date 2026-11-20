@@ -1,0 +1,9 @@
+# Wallpaper PR #1166 upstream conflict resolution
+
+Source `b9ad2147a4f760a11a72a9556ad6be587d7763e6` normally merges actual upstream `65f1d4e1de7cec03fc3bd58baa5e61f8704cc91a` into original tested `aaca56f9827d2544a1acd79c620895b992e0ebc9`. Only docs.html and package.json conflicted. Both Wallpaper Studio and the incoming Card Flip Manual documentation remain complete; the canonical test command preserves every upstream test and appends the wallpaper suite. The feature diff against current main is unchanged at five files /235 additions /1 deletion.
+
+Full canonical npm test passes, as do all 24 storage-inspector/card-flip tests, registry --check for 124 games/13 contributors, and metadata SHA checks with zero mismatches/missing files. Strict assets passes and its complete output equals a separate clean-main worktree byte for byte. Whitespace already present in four incoming unrelated game files was retained; the feature diff passes git diff --check.
+
+The original portable acceptance harness was rerun against the actual merged docs/catalog and unchanged wallpaper JavaScript (served SHA256 3a3c7ddfed4ddc778b2a6cb025c18385956b9da3fd1bcbe25852a728eab5da67). All 24 card icons, real Full HD/4K/phone PNG downloads and complete decoded pixel hashes, tints/scanlines/logo, cancellation, failure/retry/stale callbacks, cooperative drawing, native keyboard, reduced motion and 320/375/430/850/1440px checks pass. No page errors or failed resources. This checks exported native pixels, not canvas size alone. These are local results, separate from hosted CI and owner approval.
+
+Use the original reproducible harness, exact captured Lucide fixture and instructions at immutable fork evidence commit 2004c090b37d4368a0d0a9c70661459dc6d91892 under docs/review/wallpaper-1109, setting ARCADE_SOURCE to this source checkout and serving port5293. This folder records the new combined-tree results and screenshots; no evidence files are added to the source PR.
