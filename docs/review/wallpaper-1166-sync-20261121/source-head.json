@@ -1,0 +1,22 @@
+{
+  "head": "671dbe41c9a8a7022bccb5a9b3796beccc6a8462",
+  "parents": [
+    "b9ad2147a4f760a11a72a9556ad6be587d7763e6",
+    "9855d6957328a764e728ab375503940bd5bdba83"
+  ],
+  "pr": "https://github.com/DebasmitaBose0/ArcadeVerse/pull/1166",
+  "featureFilesUnchangedFrom": "b9ad2147a4f760a11a72a9556ad6be587d7763e6",
+  "resolved": [
+    "docs.html",
+    "package.json"
+  ],
+  "strictAssets": {
+    "errors": 0,
+    "warnings": 81,
+    "byteIdenticalToCleanUpstream": true
+  },
+  "inheritedWhitespace": [
+    "assets/js/app.js:677",
+    "scripts/test-a11y-audio-beacon.js:109"
+  ]
+}
