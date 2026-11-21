@@ -33,9 +33,9 @@
   "observedSpanMs": 2016.6,
   "renderProfile": {
     "samples": 80,
-    "meanMs": 0.6887500000651926,
-    "p95Ms": 1.3999999985098839,
-    "maxMs": 5.599999997764826,
+    "meanMs": 0.6024999999906868,
+    "p95Ms": 0.8999999985098839,
+    "maxMs": 4.599999997764826,
     "includesReadback": true
   },
   "export": {

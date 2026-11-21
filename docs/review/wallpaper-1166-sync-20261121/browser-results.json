@@ -2,7 +2,7 @@
   "pass": true,
   "results": {
     "distinctActualRegistryCardsAndNativeSvg": true,
-    "cooperativeMainThreadTicks": 5,
+    "cooperativeMainThreadTicks": 4,
     "styleControlsPreserveMix": {
       "matrixAmberDifferent": true,
       "scanline0vs100Different": true,
@@ -28,32 +28,32 @@
       "name": "desktop-synthwave",
       "width": 1920,
       "height": 1080,
-      "bytes": 1865747,
-      "decodedRgbaSha256": "36108847884c3e5c00a6ed3333e0cffdf513192b11b9a8da19fca918c9906a67",
+      "bytes": 1843035,
+      "decodedRgbaSha256": "41ab0b01a89bec2e6aba62110d23bbc38ed4ab7cabb54230bc1a45987d219ebb",
       "suggestedFilename": "arcadeverse-1920x1080-synthwave.png"
     },
     {
       "name": "uhd-synthwave",
       "width": 3840,
       "height": 2160,
-      "bytes": 5666221,
-      "decodedRgbaSha256": "00b8b98b624d787f0497bcf2cd77d6ea34ff9c2aac245986db7b6c4eda251bea",
+      "bytes": 5608143,
+      "decodedRgbaSha256": "65098f10c45c4dcbf546832883ebcb4f9309581358f3ea4a92faaa0a4d476ebc",
       "suggestedFilename": "arcadeverse-3840x2160-synthwave.png"
     },
     {
       "name": "phone-synthwave",
       "width": 1080,
       "height": 1920,
-      "bytes": 1936848,
-      "decodedRgbaSha256": "15f266ed3fdcba8db6b8d1a71f1e316745f79ede335b8b2d51450dba284ada95",
+      "bytes": 1919974,
+      "decodedRgbaSha256": "a21613bbf6bd9a5bed2fcbf0715107f279ef4d5cb7cbda8efc134a512df853ca",
       "suggestedFilename": "arcadeverse-1080x1920-synthwave.png"
     },
     {
       "name": "phone-retry",
       "width": 1080,
       "height": 1920,
-      "bytes": 1936848,
-      "decodedRgbaSha256": "15f266ed3fdcba8db6b8d1a71f1e316745f79ede335b8b2d51450dba284ada95",
+      "bytes": 1919974,
+      "decodedRgbaSha256": "a21613bbf6bd9a5bed2fcbf0715107f279ef4d5cb7cbda8efc134a512df853ca",
       "suggestedFilename": "arcadeverse-1080x1920-synthwave.png"
     }
   ],

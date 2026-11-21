@@ -227,4 +227,3 @@ Audited 124 games: 0 Errors, 81 Warnings
 • Enforced isolation boundary against top-level window tampering in game runtimes.
 
 [SUCCESS] All community games pass pre-flight verification!
-
