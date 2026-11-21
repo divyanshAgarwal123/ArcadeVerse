@@ -1,0 +1,49 @@
+{
+  "base": "http://127.0.0.1:5410",
+  "checks": [
+    "native white-bar/background/foreground pixel oracle; actual keyboard/touch parallax; vertical/horizontal/count/thickness controls; animated frames and zero idle work after pause",
+    "real local PNG decoding/alpha layers; malformed upload preserves previous pixels; an explicitly delayed stale decode closes its bitmap and cannot replace the latest layer",
+    "native 800x450 PNG fully decodes to the preview pixel hash; object URLs/anchors removed; injected encoding denial/null and stale callback remain recoverable",
+    "real reduced-motion pause; explicit low-power hint fixture; desktop/320/390/760px containment; idempotence; explicit cached-page resume and full frame/listener/bitmap/URL cleanup/remount"
+  ],
+  "errors": [],
+  "failed": [],
+  "pixelOracle": {
+    "visible": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "front": [
+      34,
+      211,
+      238,
+      255
+    ],
+    "flat": [
+      16,
+      26,
+      49,
+      255
+    ]
+  },
+  "observedCallbackFps": 60.0049590875279,
+  "observedCallbacks": 122,
+  "observedSpanMs": 2016.5,
+  "renderProfile": {
+    "samples": 80,
+    "meanMs": 0.5875,
+    "p95Ms": 0.8999999985098839,
+    "maxMs": 4.899999998509884,
+    "includesReadback": true
+  },
+  "export": {
+    "width": 800,
+    "height": 450,
+    "bytes": 20576,
+    "decodedRgbaSha256": "72ca26ab33bd0d552501cdc9ccf13f5b968b4d24c8985cc7eda2dec9b9b76c75"
+  },
+  "passed": true,
+  "fixtures": "Native Canvas/PNG/ImageBitmap, keyboard/touch, uploads and downloads. Captured Lucide CDN; omitted Google Fonts. Stale decode/export, encoding errors, lifecycle and low-power branches use explicit fixtures. Render profile includes pixel readback; observed headless callback cadence is reported separately and is not physical 60 FPS verification."
+}
