@@ -1,0 +1,34 @@
+{
+  "base": "http://127.0.0.1:5415",
+  "checks": [
+    "SDK identity preserved; real keyboard and touch targets change rendered pixels; all three presets; bounded settling leaves zero idle rAF work",
+    "idempotent mount; explicitly injected persisted page transitions retain working input; normal exit removes every owned listener/frame; remount works",
+    "desktop and 320/390/760px containment; actual constrained API; zero page errors or failed local resources"
+  ],
+  "errors": [],
+  "failed": [],
+  "browserApi": {
+    "result": {
+      "converged": true,
+      "error": 0,
+      "iterations": 1,
+      "withinReach": true
+    },
+    "points": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 10,
+        "y": 0
+      },
+      {
+        "x": 10,
+        "y": 10
+      }
+    ]
+  },
+  "passed": true,
+  "fixtures": "Real docs/SDK/Canvas and native keyboard/touch. Captured Lucide CDN, omitted Google Fonts; page-transition cases explicitly inject lifecycle events."
+}

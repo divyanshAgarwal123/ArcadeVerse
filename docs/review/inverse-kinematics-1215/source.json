@@ -1,0 +1,12 @@
+{
+  "issue": 1215,
+  "head": "b7a106afcd0df7d40a2eded355d25550501d3ead",
+  "parent": "8567726445786815ecba766feb54975bf0a82518",
+  "files": [
+    "assets/js/inverse-kinematics-physics.js",
+    "assets/css/inverse-kinematics-lab.css",
+    "scripts/test-inverse-kinematics.js",
+    "docs.html",
+    "package.json"
+  ]
+}

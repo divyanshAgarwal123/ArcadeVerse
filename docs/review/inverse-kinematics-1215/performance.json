@@ -1,0 +1,24 @@
+{
+  "runtime": "v25.9.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "note": "Warmed solver timings on this machine; scheduling outliers retained. Not a universal per-frame guarantee.",
+  "results": [
+    {
+      "joints": 8,
+      "samples": 4000,
+      "meanMs": 0.002542837249999998,
+      "medianMs": 0.0024160000000037485,
+      "p95Ms": 0.0030839999999940915,
+      "maxMs": 0.060791000000001816
+    },
+    {
+      "joints": 64,
+      "samples": 4000,
+      "meanMs": 0.012524365250000034,
+      "medianMs": 0.010750000000001592,
+      "p95Ms": 0.02083400000000779,
+      "maxMs": 0.047333999999992216
+    }
+  ]
+}
