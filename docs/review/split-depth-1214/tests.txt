@@ -1,0 +1,18 @@
+✔ vertical and horizontal bars are equally spaced and a flat frame has no bars or parallax (1.402458ms)
+✔ the compositor draws background before white occluders and foreground after them, balancing context state (0.2265ms)
+✔ local image layers use the same ordered compositor and preserve their aspect ratio (0.0995ms)
+✔ dimensions, settings and malformed PNGs fail with bounded input validation (0.252208ms)
+✔ start/stop is idempotent, cancellation removes queued work and stale callbacks cannot restart it (0.278666ms)
+✔ measured slow callback cadence triggers the automatic static fallback and stops scheduling (0.832833ms)
+✔ low-power hints, explicit flat quality and reduced motion all avoid continuous frames (0.154125ms)
+✔ invalid configuration is atomic and successful configuration clears a prior drawing error (0.123667ms)
+✔ owned images are closed once on replacement/reset/dispose and disposal clears the backing surface (0.519833ms)
+✔ browser attachment preserves the existing SDK and other effect helpers (0.975208ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 80.099292

@@ -1,0 +1,11 @@
+# Split-depth Canvas acceptance
+
+The exact source head and parent are recorded in source.json. The vanilla Canvas 2D compositor places background pixels behind vertical/horizontal white occlusion bars and foreground pixels in front. The existing docs page includes pointer/touch and keyboard parallax, bar controls, local PNG layers, motion controls, PNG export and automatic flat fallback for reduced device capabilities or measured slow callback cadence.
+
+Ten focused Node cases, the full canonical npm test command, strict assets, registry --check and metadata integrity pass. Tests include independent layer ordering and spacing, invalid data, fixed bounds, frame cancellation and recovery, adaptive fallback, image ownership and SDK preservation.
+
+The native Chrome browser report records actual white/background/foreground pixel values, real ImageBitmap uploads, alpha layering, malformed-image preservation, and complete decoded 800x450 PNG equality to the preview RGBA SHA-256. Export denial/null/stale callbacks and stale image decoding are explicitly injected fixtures; the normal upload/download paths use native browser APIs. URL/anchor/bitmap/frame/listener cleanup, remount, reduced motion and 320/390/760px containment pass without page errors or failed local resources. Representative desktop and mobile screenshots were visually inspected.
+
+On the recorded run, 122 actual headless animation callbacks spanned 2016.6 ms, approximately 60.002 callbacks/s. The 80-sample 800x450 render-plus-pixel-readback profile measured mean 0.689 ms, P95 1.4 ms and max 5.6 ms. These are local measured observations, not physical display or universal performance guarantees. Auto quality stops animated depth and retains a flat preview on sustained slow callback cadence. Idle and teardown checks assert zero owned queued work/resources; they are not a claim of a whole-browser heap proof.
+
+Reproduce with npm test, node scripts/validate-games.js --strict-assets, node scripts/build-registry.js --check and node scripts/verify-registry-integrity.js. Serve the source over HTTP, then run browser-check.mjs with BASE, OUT and PLAYWRIGHT_MODULE. The captured actual Lucide response is shared with the adjacent inverse-kinematics-1215 evidence folder; LUCIDE_FIXTURE and CHROME_PATH may override paths. Google Fonts are omitted. Synthetic branches are documented above.

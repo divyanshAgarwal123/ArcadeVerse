@@ -1,0 +1,12 @@
+{
+  "issue": 1214,
+  "head": "98f20316b6453d16791492ffe37f73903accde96",
+  "parent": "8567726445786815ecba766feb54975bf0a82518",
+  "files": [
+    "assets/js/split-depth-3d.js",
+    "assets/css/split-depth-studio.css",
+    "scripts/test-split-depth-3d.js",
+    "docs.html",
+    "package.json"
+  ]
+}
