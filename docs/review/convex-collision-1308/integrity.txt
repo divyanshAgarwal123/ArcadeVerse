@@ -1,0 +1,7 @@
+
+> arcadeverse@1.2.0 verify:integrity
+> node scripts/verify-registry-integrity.js
+
+[Integrity Audit] Validating game registry SHA-256 metadata integrity...
+[Audit Complete] Verified 125 games. Mismatches: 0, Missing: 0
+[Integrity Success] All game metadata files verified successfully with SHA-256 matching.

@@ -1,0 +1,673 @@
+
+> arcadeverse@1.2.0 test
+> node scripts/verify-catalog-syntax.js && node scripts/verify-leaderboard-highlight.js && node scripts/test-playlist-codes.js && node scripts/test-time-warp-replay.mjs && node --test scripts/test-playtime-heatmap.js && node --test scripts/test-dev-asset-auditor.js && node --test scripts/test-arcade-token-dispenser.js && node --test scripts/test-isometric-arcade-room.js && node --test scripts/test-leaderboard-spectrum.js && node --test scripts/test-arcade-ticket-dispenser.js && node --test scripts/test-a11y-audio-beacon.js && node --test scripts/test-inverse-kinematics.js && node --test scripts/test-split-depth-3d.js && node --test scripts/test-convex-hull-collision.js
+
+
+========================================================
+   ArcadeVerse Core & Catalog Syntax Integrity Suite
+========================================================
+
+  [CHECKING] Validating JavaScript file syntax via Node compiler:
+  [OK] [SYNTAX OK] assets/js/app.js
+  [OK] [SYNTAX OK] assets/js/games-registry.js
+  [OK] [SYNTAX OK] scripts/validate-games.js
+  [OK] [SYNTAX OK] scripts/build-registry.js
+
+  [INSPECTING] assets/js/app.js architectural integrity...
+  [OK] renderAutocomplete definition located.
+  [OK] Faceted Filters section located.
+  [OK] renderAutocomplete curly brace balance verified (59 open, 59 close).
+  [OK] Found critical runtime hook: renderGames()
+  [OK] Found critical runtime hook: buildTagChips()
+  [OK] Found critical runtime hook: document.addEventListener("DOMContentLoaded"
+  [OK] Found responsive orientationchange listener for game modal.
+
+  [INSPECTING] assets/js/games-registry.js payload integrity...
+  [OK] GAMES_REGISTRY array successfully declared.
+
+========================================================
+Audit Finished: 10 Passed, 0 Errors
+========================================================
+
+[SUCCESS] All catalog & core syntax audits passed successfully with zero errors!
+
+
+========================================================
+   Leaderboard Search Substring Highlight Test Suite
+========================================================
+
+  [PASS] escapeRegex helper implemented
+  [PASS] highlightMatch helper implemented
+  [PASS] 200ms search input debounce implemented
+  [PASS] DisplayName wrapped with highlightMatch
+  [PASS] GitHub Handle wrapped with highlightMatch
+  [PASS] <mark class="search-highlight"> wrapper used
+  [PASS] Case-insensitive name match: <mark class="search-highlight">Deba</mark>smita Bose
+  [PASS] Number handle match: Babin<mark class="search-highlight">123</mark>456
+  [PASS] Empty query leaves text untouched: Normal User
+  [PASS] Regex special characters safely escaped: Special <mark class="search-highlight">[User]</mark>
+  [PASS] .search-highlight CSS class defined in pages.css
+  [PASS] .search-highlight cyan background present
+  [PASS] .search-highlight dark contrast text present
+
+========================================================
+Results: 13 Passed, 0 Failed
+========================================================
+
+[SUCCESS] All Leaderboard substring highlight checks passed successfully!
+
+TAP version 13
+# Subtest: exports compact UTF-8 AVPL codes and imports with fresh metadata
+ok 1 - exports compact UTF-8 AVPL codes and imports with fresh metadata
+  ---
+  duration_ms: 3.287291
+  ...
+# Subtest: deduplicates game IDs in original order and supports empty playlists
+ok 2 - deduplicates game IDs in original order and supports empty playlists
+  ---
+  duration_ms: 0.442542
+  ...
+# Subtest: rejects malformed encoding, JSON, UTF-8 and prefixes without changing state
+ok 3 - rejects malformed encoding, JSON, UTF-8 and prefixes without changing state
+  ---
+  duration_ms: 0.811875
+  ...
+# Subtest: rejects invalid shapes, oversized names/lists, unknown IDs and extra metadata atomically
+ok 4 - rejects invalid shapes, oversized names/lists, unknown IDs and extra metadata atomically
+  ---
+  duration_ms: 1.302
+  ...
+# Subtest: storage failure does not change in-memory playlists or dispatch success
+ok 5 - storage failure does not change in-memory playlists or dispatch success
+  ---
+  duration_ms: 0.48625
+  ...
+# Subtest: export rejects a missing playlist or stale registry IDs
+ok 6 - export rejects a missing playlist or stale registry IDs
+  ---
+  duration_ms: 0.294875
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 12.49275
+TAP version 13
+# Subtest: timestamp interpolation and plate timing at 30 Hz
+ok 1 - timestamp interpolation and plate timing at 30 Hz
+  ---
+  duration_ms: 1.659625
+  ...
+# Subtest: timestamp interpolation and plate timing at 60 Hz
+ok 2 - timestamp interpolation and plate timing at 60 Hz
+  ---
+  duration_ms: 0.308333
+  ...
+# Subtest: timestamp interpolation and plate timing at 120 Hz
+ok 3 - timestamp interpolation and plate timing at 120 Hz
+  ---
+  duration_ms: 0.76425
+  ...
+# Subtest: timestamp interpolation and plate timing at 144 Hz
+ok 4 - timestamp interpolation and plate timing at 144 Hz
+  ---
+  duration_ms: 0.79775
+  ...
+# Subtest: timestamp interpolation and plate timing at 240 Hz
+ok 5 - timestamp interpolation and plate timing at 240 Hz
+  ---
+  duration_ms: 0.971791
+  ...
+# Subtest: irregular elapsed updates interpolate instead of consuming one snapshot per call
+ok 6 - irregular elapsed updates interpolate instead of consuming one snapshot per call
+  ---
+  duration_ms: 0.116667
+  ...
+# Subtest: paused update does not advance playback, and restart clears its timeline
+ok 7 - paused update does not advance playback, and restart clears its timeline
+  ---
+  duration_ms: 0.253584
+  ...
+# Subtest: rewind restores recording clock and new snapshots stay ordered without wall-time gaps
+ok 8 - rewind restores recording clock and new snapshots stay ordered without wall-time gaps
+  ---
+  duration_ms: 0.159208
+  ...
+# Subtest: ghost owns detached snapshots and replacement resets cursor/elapsed
+ok 9 - ghost owns detached snapshots and replacement resets cursor/elapsed
+  ---
+  duration_ms: 0.244167
+  ...
+# Subtest: history and selected replay are bounded by six and five simulation seconds
+ok 10 - history and selected replay are bounded by six and five simulation seconds
+  ---
+  duration_ms: 0.344833
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11.243875
+TAP version 13
+# Subtest: records real launches, counts repeat plays and selects the top title
+ok 1 - records real launches, counts repeat plays and selects the top title
+  ---
+  duration_ms: 1.191792
+  ...
+# Subtest: treats IDs as data, including prototype-like IDs, and preserves unrelated keys
+ok 2 - treats IDs as data, including prototype-like IDs, and preserves unrelated keys
+  ---
+  duration_ms: 0.081667
+  ...
+# Subtest: builds exactly 52 weeks of unique local dates with future days marked
+ok 3 - builds exactly 52 weeks of unique local dates with future days marked
+  ---
+  duration_ms: 0.2875
+  ...
+# Subtest: local-day calendar math survives year, leap-year and DST boundaries
+ok 4 - local-day calendar math survives year, leap-year and DST boundaries
+  ---
+  duration_ms: 98.229667
+  ...
+# Subtest: retains only the last 370 calendar days as launches arrive
+ok 5 - retains only the last 370 calendar days as launches arrive
+  ---
+  duration_ms: 92.188291
+  ...
+# Subtest: uses four nonzero intensity tiers without inventing baseline activity
+ok 6 - uses four nonzero intensity tiers without inventing baseline activity
+  ---
+  duration_ms: 0.104208
+  ...
+# Subtest: refuses malformed or inconsistent storage without overwriting it
+ok 7 - refuses malformed or inconsistent storage without overwriting it
+  ---
+  duration_ms: 0.363917
+  ...
+# Subtest: fails closed on duplicate day/game records and oversized titles
+ok 8 - fails closed on duplicate day/game records and oversized titles
+  ---
+  duration_ms: 0.152333
+  ...
+# Subtest: storage denial and quota failures leave the previous state intact
+ok 9 - storage denial and quota failures leave the previous state intact
+  ---
+  duration_ms: 0.13975
+  ...
+# Subtest: rejects invalid games, dates and saturated daily histories
+ok 10 - rejects invalid games, dates and saturated daily histories
+  ---
+  duration_ms: 1.168833
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 231.302417
+TAP version 13
+# Subtest: redacts query strings, fragments and embedded credentials from report URLs
+ok 1 - redacts query strings, fragments and embedded credentials from report URLs
+  ---
+  duration_ms: 0.64675
+  ...
+# Subtest: restricts probes to same-origin public assets and games inside the deployment prefix
+ok 2 - restricts probes to same-origin public assets and games inside the deployment prefix
+  ---
+  duration_ms: 0.44475
+  ...
+# Subtest: external and opaque resources stay unknown rather than becoming fake 404s
+ok 3 - external and opaque resources stay unknown rather than becoming fake 404s
+  ---
+  duration_ms: 0.088333
+  ...
+# Subtest: flags unencoded characters while preserving the actual normalized probe URL
+ok 4 - flags unencoded characters while preserving the actual normalized probe URL
+  ---
+  duration_ms: 0.071334
+  ...
+# Subtest: discovers CSS imports and URL assets without executing inline data or fragment references
+ok 5 - discovers CSS imports and URL assets without executing inline data or fragment references
+  ---
+  duration_ms: 0.419125
+  ...
+# Subtest: normal mode installs no observers, event listeners, globals or UI
+ok 6 - normal mode installs no observers, event listeners, globals or UI
+  ---
+  duration_ms: 1.498958
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 37.746541
+TAP version 13
+# Subtest: grants five starter tokens once and preserves unrelated profile storage
+ok 1 - grants five starter tokens once and preserves unrelated profile storage
+  ---
+  duration_ms: 1.405375
+  ...
+# Subtest: claims once per UTC day, including the midnight boundary and rollback guard
+ok 2 - claims once per UTC day, including the midnight boundary and rollback guard
+  ---
+  duration_ms: 0.2105
+  ...
+# Subtest: redeems once, persists ownership, and equips only an owned reward in its slot
+ok 3 - redeems once, persists ownership, and equips only an owned reward in its slot
+  ---
+  duration_ms: 0.4845
+  ...
+# Subtest: rejects insufficient funds and unknown operations without deducting anything
+ok 4 - rejects insufficient funds and unknown operations without deducting anything
+  ---
+  duration_ms: 0.244
+  ...
+# Subtest: stores the optional preference without charging and validates its type
+ok 5 - stores the optional preference without charging and validates its type
+  ---
+  duration_ms: 0.122042
+  ...
+# Subtest: keeps corrupt, inconsistent and non-integer ledgers intact
+ok 6 - keeps corrupt, inconsistent and non-integer ledgers intact
+  ---
+  duration_ms: 0.835458
+  ...
+# Subtest: fails closed on quota, denied storage and invalid clocks
+ok 7 - fails closed on quota, denied storage and invalid clocks
+  ---
+  duration_ms: 0.13725
+  ...
+# Subtest: bounds balances and revisions without persisting a partial deduction
+ok 8 - bounds balances and revisions without persisting a partial deduction
+  ---
+  duration_ms: 0.102708
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 37.041334
+TAP version 13
+# Subtest: assigns categories and tags to deterministic aisles with a general action fallback
+ok 1 - assigns categories and tags to deterministic aisles with a general action fallback
+  ---
+  duration_ms: 0.664416
+  ...
+# Subtest: groups each known game once, preserves filtered sort order, and treats IDs as data
+ok 2 - groups each known game once, preserves filtered sort order, and treats IDs as data
+  ---
+  duration_ms: 0.29525
+  ...
+# Subtest: sizes rows for uneven aisle populations without overflowing the floor
+ok 3 - sizes rows for uneven aisle populations without overflowing the floor
+  ---
+  duration_ms: 0.218667
+  ...
+# Subtest: fits the whole projected room and bounds extreme pan and zoom inputs
+ok 4 - fits the whole projected room and bounds extreme pan and zoom inputs
+  ---
+  duration_ms: 0.10925
+  ...
+# Subtest: retains finite camera geometry at narrow and temporarily collapsed sizes
+ok 5 - retains finite camera geometry at narrow and temporarily collapsed sizes
+  ---
+  duration_ms: 0.140916
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 34.942584
+TAP version 13
+# Subtest: verifies 16 discrete ISO frequency bands configuration
+ok 1 - verifies 16 discrete ISO frequency bands configuration
+  ---
+  duration_ms: 0.495375
+  ...
+# Subtest: ambient chiptune wave generates smooth bounded amplitudes between 0.1 and 1.0
+ok 2 - ambient chiptune wave generates smooth bounded amplitudes between 0.1 and 1.0
+  ---
+  duration_ms: 0.493166
+  ...
+# Subtest: peak meter jumps immediately to spike and holds before gravity decay
+ok 3 - peak meter jumps immediately to spike and holds before gravity decay
+  ---
+  duration_ms: 0.375583
+  ...
+# Subtest: discrete LED segment color distribution matches Green -> Amber -> Red tiers
+ok 4 - discrete LED segment color distribution matches Green -> Amber -> Red tiers
+  ---
+  duration_ms: 0.073667
+  ...
+# Subtest: maps raw Web Audio AnalyserNode frequency bins to 16 normalized bands
+ok 5 - maps raw Web Audio AnalyserNode frequency bins to 16 normalized bands
+  ---
+  duration_ms: 0.082959
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 34.59225
+TAP version 13
+# Subtest: floors final scores at boundaries, including fractional scores and zero
+ok 1 - floors final scores at boundaries, including fractional scores and zero
+  ---
+  duration_ms: 2.093583
+  ...
+# Subtest: retains zero-score receipts and refuses replay even with a different final score
+ok 2 - retains zero-score receipts and refuses replay even with a different final score
+  ---
+  duration_ms: 0.144542
+  ...
+# Subtest: rejects invalid scores and receipts without creating or changing a ledger
+ok 3 - rejects invalid scores and receipts without creating or changing a ledger
+  ---
+  duration_ms: 0.2755
+  ...
+# Subtest: sums independent opened sessions against independently computed totals
+ok 4 - sums independent opened sessions against independently computed totals
+  ---
+  duration_ms: 3.886083
+  ...
+# Subtest: redemption subtracts the listed cost once and only owned slot prizes equip
+ok 5 - redemption subtracts the listed cost once and only owned slot prizes equip
+  ---
+  duration_ms: 0.468334
+  ...
+# Subtest: insufficient funds, unowned prizes and unknown actions preserve storage
+ok 6 - insufficient funds, unowned prizes and unknown actions preserve storage
+  ---
+  duration_ms: 0.083334
+  ...
+# Subtest: read and write denials never report an award or lose the previous ledger
+ok 7 - read and write denials never report an award or lose the previous ledger
+  ---
+  duration_ms: 0.084209
+  ...
+# Subtest: preserves malformed, inconsistent, duplicate and oversized ledgers
+ok 8 - preserves malformed, inconsistent, duplicate and oversized ledgers
+  ---
+  duration_ms: 0.824584
+  ...
+# Subtest: balance, receipt and revision limits preserve the complete wallet
+ok 9 - balance, receipt and revision limits preserve the complete wallet
+  ---
+  duration_ms: 12.208625
+  ...
+# Subtest: writes only the ticket key, persisting hashes without raw session tokens
+ok 10 - writes only the ticket key, persisting hashes without raw session tokens
+  ---
+  duration_ms: 0.193667
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 57.701833
+TAP version 13
+# Subtest: ArcadeAudioBeacon exports all required API methods
+ok 1 - ArcadeAudioBeacon exports all required API methods
+  ---
+  duration_ms: 0.532958
+  ...
+# Subtest: normalizeCoordinates maps pixel and normalized values into [0.0, 1.0] range
+ok 2 - normalizeCoordinates maps pixel and normalized values into [0.0, 1.0] range
+  ---
+  duration_ms: 0.102
+  ...
+# Subtest: computePan accurately maps horizontal position to stereo panner [-1.0, +1.0]
+ok 3 - computePan accurately maps horizontal position to stereo panner [-1.0, +1.0]
+  ---
+  duration_ms: 0.064667
+  ...
+# Subtest: computePitch accurately modulates frequency from 200Hz (bottom) to 1200Hz (top)
+ok 4 - computePitch accurately modulates frequency from 200Hz (bottom) to 1200Hz (top)
+  ---
+  duration_ms: 0.063583
+  ...
+# Subtest: computeProximity identifies nearest boundary and hazard distance
+ok 5 - computeProximity identifies nearest boundary and hazard distance
+  ---
+  duration_ms: 0.1215
+  ...
+# Subtest: computeRadarInterval scales tempo from 100ms at edge to 1000ms at center
+ok 6 - computeRadarInterval scales tempo from 100ms at edge to 1000ms at center
+  ---
+  duration_ms: 0.051833
+  ...
+# Subtest: State management, toggles, and volume controls operate cleanly
+ok 7 - State management, toggles, and volume controls operate cleanly
+  ---
+  duration_ms: 0.355375
+  ...
+# Subtest: sonifyEntity and updatePlayerPosition execute safely in headless environments
+ok 8 - sonifyEntity and updatePlayerPosition execute safely in headless environments
+  ---
+  duration_ms: 0.261417
+  ...
+# Subtest: ArcadeVerse SDK exposes a11y audio beacon bridge methods
+ok 9 - ArcadeVerse SDK exposes a11y audio beacon bridge methods
+  ---
+  duration_ms: 0.850583
+  ...
+# Subtest: Ensures zero Unicode emojis across all modified files
+ok 10 - Ensures zero Unicode emojis across all modified files
+  ---
+  duration_ms: 0.738667
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 37.770292
+TAP version 13
+# Subtest: reachable targets converge across repeated bounded frame solves while retaining every link length
+ok 1 - reachable targets converge across repeated bounded frame solves while retaining every link length
+  ---
+  duration_ms: 1.756417
+  ...
+# Subtest: unreachable collinear targets approach the analytical maximum reach
+ok 2 - unreachable collinear targets approach the analytical maximum reach
+  ---
+  duration_ms: 0.4165
+  ...
+# Subtest: a locked two-link chain gives its exact forward-kinematics endpoint and cannot pretend to reach another
+ok 3 - a locked two-link chain gives its exact forward-kinematics endpoint and cannot pretend to reach another
+  ---
+  duration_ms: 0.081042
+  ...
+# Subtest: joint angles stay inside asymmetric limits under 160 deterministic target moves
+ok 4 - joint angles stay inside asymmetric limits under 160 deterministic target moves
+  ---
+  duration_ms: 2.497625
+  ...
+# Subtest: root relocation and orientation preserve a valid anchored chain
+ok 5 - root relocation and orientation preserve a valid anchored chain
+  ---
+  duration_ms: 0.137833
+  ...
+# Subtest: returned joint/limit snapshots and constructor inputs cannot mutate the solver
+ok 6 - returned joint/limit snapshots and constructor inputs cannot mutate the solver
+  ---
+  duration_ms: 0.122125
+  ...
+# Subtest: invalid sizes, points, limits and solve options fail without corrupting the last valid pose
+ok 7 - invalid sizes, points, limits and solve options fail without corrupting the last valid pose
+  ---
+  duration_ms: 0.498125
+  ...
+# Subtest: all generators produce independent, bounded chains and valid poses
+ok 8 - all generators produce independent, bounded chains and valid poses
+  ---
+  duration_ms: 0.276958
+  ...
+# Subtest: browser attachment preserves the SDK object, unrelated physics helpers and CommonJS import purity
+ok 9 - browser attachment preserves the SDK object, unrelated physics helpers and CommonJS import purity
+  ---
+  duration_ms: 0.753459
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 42.576208
+TAP version 13
+# Subtest: vertical and horizontal bars are equally spaced and a flat frame has no bars or parallax
+ok 1 - vertical and horizontal bars are equally spaced and a flat frame has no bars or parallax
+  ---
+  duration_ms: 0.829167
+  ...
+# Subtest: the compositor draws background before white occluders and foreground after them, balancing context state
+ok 2 - the compositor draws background before white occluders and foreground after them, balancing context state
+  ---
+  duration_ms: 0.229792
+  ...
+# Subtest: local image layers use the same ordered compositor and preserve their aspect ratio
+ok 3 - local image layers use the same ordered compositor and preserve their aspect ratio
+  ---
+  duration_ms: 0.092583
+  ...
+# Subtest: dimensions, settings and malformed PNGs fail with bounded input validation
+ok 4 - dimensions, settings and malformed PNGs fail with bounded input validation
+  ---
+  duration_ms: 0.707083
+  ...
+# Subtest: start/stop is idempotent, cancellation removes queued work and stale callbacks cannot restart it
+ok 5 - start/stop is idempotent, cancellation removes queued work and stale callbacks cannot restart it
+  ---
+  duration_ms: 0.54475
+  ...
+# Subtest: measured slow callback cadence triggers the automatic static fallback and stops scheduling
+ok 6 - measured slow callback cadence triggers the automatic static fallback and stops scheduling
+  ---
+  duration_ms: 1.117709
+  ...
+# Subtest: low-power hints, explicit flat quality and reduced motion all avoid continuous frames
+ok 7 - low-power hints, explicit flat quality and reduced motion all avoid continuous frames
+  ---
+  duration_ms: 0.188208
+  ...
+# Subtest: invalid configuration is atomic and successful configuration clears a prior drawing error
+ok 8 - invalid configuration is atomic and successful configuration clears a prior drawing error
+  ---
+  duration_ms: 0.35575
+  ...
+# Subtest: owned images are closed once on replacement/reset/dispose and disposal clears the backing surface
+ok 9 - owned images are closed once on replacement/reset/dispose and disposal clears the backing surface
+  ---
+  duration_ms: 0.278833
+  ...
+# Subtest: browser attachment preserves the existing SDK and other effect helpers
+ok 10 - browser attachment preserves the existing SDK and other effect helpers
+  ---
+  duration_ms: 0.870709
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 39.468458
+TAP version 13
+# Subtest: monotone chain drops duplicate, interior and collinear edge points in counterclockwise order
+ok 1 - monotone chain drops duplicate, interior and collinear edge points in counterclockwise order
+  ---
+  duration_ms: 0.749208
+  ...
+# Subtest: empty, duplicate-only and collinear hulls have no polygonal area
+ok 2 - empty, duplicate-only and collinear hulls have no polygonal area
+  ---
+  duration_ms: 0.316291
+  ...
+# Subtest: prepared vertices are immutable and independent of the input
+ok 3 - prepared vertices are immutable and independent of the input
+  ---
+  duration_ms: 0.154709
+  ...
+# Subtest: rejects invalid inputs and raw shapes rather than silently returning a collision
+ok 4 - rejects invalid inputs and raw shapes rather than silently returning a collision
+  ---
+  duration_ms: 0.168375
+  ...
+# Subtest: rejects AABB phantom overlaps and handles parallel rectangle edges
+ok 5 - rejects AABB phantom overlaps and handles parallel rectangle edges
+  ---
+  duration_ms: 0.508375
+  ...
+# Subtest: uses the nearest exit under containment rather than the smaller interval length
+ok 6 - uses the nearest exit under containment rather than the smaller interval length
+  ---
+  duration_ms: 0.093917
+  ...
+# Subtest: an oriented 6 by 2 rectangle has its real minimum box, not its larger AABB
+ok 7 - an oriented 6 by 2 rectangle has its real minimum box, not its larger AABB
+  ---
+  duration_ms: 0.104625
+  ...
+# Subtest: result reuse fully clears old hits and invalid axes cannot yield stale normals
+ok 8 - result reuse fully clears old hits and invalid axes cannot yield stale normals
+  ---
+  duration_ms: 0.1045
+  ...
+# Subtest: matches independent geometry and gives separating MTVs for 400 seeded moving pairs
+ok 9 - matches independent geometry and gives separating MTVs for 400 seeded moving pairs
+  ---
+  duration_ms: 10.993917
+  ...
+# Subtest: exports from CommonJS and extends the browser SDK without replacing physics helpers
+ok 10 - exports from CommonJS and extends the browser SDK without replacing physics helpers
+  ---
+  duration_ms: 0.867292
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 49.972667

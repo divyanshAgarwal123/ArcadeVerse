@@ -1,0 +1,5 @@
+
+> arcadeverse@1.2.0 build
+> node scripts/build-registry.js
+
+[Success] Compiled 125 games and 12 contributors into assets/js/games-registry.js

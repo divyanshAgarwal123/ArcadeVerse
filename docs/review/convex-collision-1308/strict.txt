@@ -1,0 +1,237 @@
+
+[INFO] ====================================================
+   ArcadeVerse Pre-Flight Contributor Game Validator
+========================================================
+
+Found 125 community games to audit...
+
+[INFO] Auditing Parent Hub Pages & Asset Boundaries...
+  [OK] [HUB PASS] docs.html
+  [OK] [HUB PASS] 404.html
+  [OK] [HUB PASS] faqs.html
+  [OK] [HUB PASS] terms.html
+  [OK] [HUB PASS] privacy.html
+
+  [PASS] asteroid-miner_babin
+  [WARN] [AUDIT] astro-courier_joitapaul
+      [WARN] Window resize listener without debouncing or ArcadeVerse responsive aspect-ratio handling (#501).
+  [PASS] astro-defense-turret_babin
+  [PASS] astro-infinite-jumper_pragna7
+  [PASS] brick-breaker-dx_babin
+  [WARN] [AUDIT] bubble-burst-arena_mistu7debnath
+      [WARN] Window resize listener without debouncing or ArcadeVerse responsive aspect-ratio handling (#501).
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] chrono-breakout_babin
+  [PASS] chrono-domino-fall_babin
+  [PASS] chrono-laser-mirror_babin
+  [PASS] chrono-portal-jump_babin
+  [WARN] [AUDIT] chrono-shift_babin
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] circuit-breaker_your-joitapaul
+  [WARN] [AUDIT] circuit-connect_arshi
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Share+Tech+Mono&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [PASS] code-breaker_babin
+  [WARN] [AUDIT] coolant-flow_babin
+      [WARN] Window resize listener without debouncing or ArcadeVerse responsive aspect-ratio handling (#501).
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+      [WARN] Console pollution: unmanaged "console.log" statement in games/coolant-flow_babin/game.js:586 -> "console.log('[Coolant Flow] WebGL/Canvas context restored. Re-initi..."
+  [PASS] cosmic-orbit-slingshot_babin
+  [PASS] cosmic-surge_debasmita
+  [PASS] cryptic-wordle_babin
+  [PASS] cyber-block-matrix_babin
+  [PASS] cyber-bomber-grid_chanchall26
+  [WARN] [AUDIT] cyber-brick-breaker_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@500;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [PASS] cyber-brick-breaker_hrshjswniii
+  [WARN] [AUDIT] cyber-circuit-scramble_babin
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] cyber-connect-four_chanchall26
+  [PASS] cyber-curling_babin
+  [PASS] cyber-glider_babin
+  [PASS] cyber-grapple_hrshjswniii
+  [PASS] cyber-gravity-hopper_babin
+  [PASS] cyber-helix-fall_babin
+  [PASS] cyber-hex-collapse_babin
+  [WARN] [AUDIT] cyber-katana_babin
+      [WARN] Window resize listener without debouncing or ArcadeVerse responsive aspect-ratio handling (#501).
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] cyber-light-cycle_babin
+  [PASS] cyber-logic-gates_hrshjswniii
+  [WARN] [AUDIT] cyber-maze-runner_chanchall26
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [WARN] [AUDIT] cyber-neon-pong_debasmita
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [WARN] [AUDIT] cyber-orbit-defense_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] cyber-pachinko_babin
+  [PASS] cyber-pulse-rhythm_babin
+  [WARN] [AUDIT] cyber-ramen-dash_babin
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] cyber-rogue_babin
+  [PASS] cyber-runner_mistu7debnath
+  [PASS] cyber-shield-rebound_babin
+  [PASS] cyber-snake_babin
+  [PASS] cyber-stacker_babin
+  [WARN] [AUDIT] cyber-sub-abyss_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [WARN] [AUDIT] cyber-sudoku_babin
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] cyber-swarm-assault_babin
+  [PASS] cyber-tanks_babin
+  [PASS] cyber-tower-defense_babin
+  [PASS] cyber-traffic-control_babin
+  [PASS] cyber-trajectory-bow_chanchall26
+  [PASS] cyber-typer_hrshjswniii
+  [PASS] deep-sea-explorer_mistu7debnath
+  [PASS] deep-signal_joitapaul
+  [PASS] detective-mystery_babin
+  [WARN] [AUDIT] dino-dig_mistu7debnath
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [WARN] [AUDIT] escape-room_debasmita
+      [WARN] Window resize listener without debouncing or ArcadeVerse responsive aspect-ratio handling (#501).
+  [WARN] [AUDIT] fishing-frenzy_mistu7debnath
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] flappy-jet_mistu7debnath
+  [PASS] fossil-frontiers_joitapaul
+  [PASS] gravity-well_babin
+  [PASS] gridlock-escape_joitapaul
+  [WARN] [AUDIT] haunted-house_debasmita
+      [WARN] Window resize listener without debouncing or ArcadeVerse responsive aspect-ratio handling (#501).
+  [PASS] hex-match_babin
+  [WARN] [AUDIT] hyper-spin-blaster_babin
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [WARN] [AUDIT] island-survival_debasmita
+      [WARN] Window resize listener without debouncing or ArcadeVerse responsive aspect-ratio handling (#501).
+  [PASS] kingdom-maker_mistu7debnath
+  [PASS] lunar-landing-protocol_joitapaul
+  [WARN] [AUDIT] math-blitz_pratikadamas
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&family=Inter:wght@400;600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [WARN] [AUDIT] memory-matrix_debasmita
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] microbe-medics_joitapaul
+  [PASS] midnight-graveyard_joitapaul
+  [PASS] neon-air-hockey_chanchall26
+  [WARN] [AUDIT] neon-asteroid-escape_joitapaul
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] neon-bowling_babin
+  [PASS] neon-darts_babin
+  [PASS] neon-drift-racer_joitapaul
+  [PASS] neon-gravity-rush_babin
+  [PASS] neon-grid-defense_mistu7debnath
+  [WARN] [AUDIT] neon-highway-hopper_chanchall26
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [PASS] neon-infiltration_babin
+  [PASS] neon-laser-pathfinder_babin
+  [PASS] neon-lunar-lander_babin
+  [PASS] neon-missile-command_babin
+  [PASS] neon-pinball-dx_babin
+  [PASS] neon-pong-smash_babin
+  [PASS] neon-pool_babin
+  [WARN] [AUDIT] neon-precision-target_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [PASS] neon-rhythm-blaster_babin
+  [WARN] [AUDIT] neon-runner_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] neon-solitaire_babin
+  [WARN] [AUDIT] neon-wave-matcher_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [PASS] orbital-gravity-lasso_babin
+  [PASS] parcel-panic_joitapaul
+  [PASS] pixel-bakery-rush_joitapaul
+  [PASS] potion-maker_mistu7debnath
+  [PASS] potion-panic_joitapaul
+  [WARN] [AUDIT] prism-pulse_joitapaul
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] protocol-rogue_hrshjswniii
+  [PASS] pumpkin-express_joitapaul
+  [WARN] [AUDIT] quantum-2048_babin
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [WARN] [AUDIT] quantum-lunar-lander_chanchall26
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [WARN] [AUDIT] quantum-match-matrix_babin
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [WARN] [AUDIT] quantum-minesweeper-dx_babin
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [WARN] [AUDIT] quantum-minesweeper_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [PASS] quantum-mini-golf_babin
+  [WARN] [AUDIT] quantum-pinball_joitapaul
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] quantum-pulse_babin
+  [WARN] [AUDIT] quantum-slide_babin
+      [WARN] Window resize listener without debouncing or ArcadeVerse responsive aspect-ratio handling (#501).
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [WARN] [AUDIT] quantum-sokoban_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [PASS] retro-space-lander_babin
+  [PASS] robo-factory_mistu7debnath
+  [PASS] solar-flare_babin
+  [PASS] space-invaders_babin
+  [PASS] stellar-echo-catcher_babin
+  [WARN] [AUDIT] stellar-miner-probe_babin
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] stellar-warp-runner_babin
+  [WARN] [AUDIT] synth-says_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] Game instantiates AudioContext without listening to ARCADEVERSE_TEARDOWN or using ArcadeVerse SDK helper.
+  [PASS] synth-wave-surfer_babin
+  [PASS] synthwave-highway-racer_babin
+  [WARN] [AUDIT] tactical-fleet_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+  [PASS] tidal-tunnels_joitapaul
+  [PASS] time-warp_mistu7debnath
+  [PASS] wave-rider_babin
+  [WARN] [AUDIT] whack-a-bug_babin
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.gstatic.com" (Disallowed CDN host: fonts.gstatic.com). Scheduled for offline font/asset migration.
+      [WARN] [CDN AUDIT] Legacy external CDN detected in index.html: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" (Disallowed CDN host: fonts.googleapis.com). Scheduled for offline font/asset migration.
+
+========================================================
+Audited 125 games: 0 Errors, 81 Warnings
+========================================================
+
+[INFO] ----------------------------------------------------
+   Validator Diagnostics & Optimization Suggestions
+----------------------------------------------------
+• Verified 125 games against 4-file structure (index.html, style.css, game.js, game.json).
+• Monitored relative asset URLs against disk targets for zero 404 network request drops.
+• Enforced zero-CDN policy against external script bundles and Google Fonts.
+• Validated SVG icon standards across stylesheets and templates (zero unicode emojis).
+• Inspected AudioContext instances and lifecycle hooks for graceful teardown compliance.
+• Scanned game runtimes for console pollution & debug statements (clean 60 FPS loops).
+• Enforced isolation boundary against top-level window tampering in game runtimes.
+
+[SUCCESS] All community games pass pre-flight verification!
