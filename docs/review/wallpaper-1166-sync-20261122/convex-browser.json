@@ -1,0 +1,53 @@
+{
+  "hardware": "Apple M3 Max",
+  "samples": [
+    {
+      "width": 1360,
+      "batches": 240,
+      "pairs": 60,
+      "medianMs": 0.008,
+      "p95Ms": 0.017,
+      "hits": 6621,
+      "overlayPixelsChanged": true,
+      "keyboardToggle": true,
+      "framePauseAndStep": true,
+      "errors": []
+    },
+    {
+      "width": 760,
+      "batches": 240,
+      "pairs": 60,
+      "medianMs": 0.008,
+      "p95Ms": 0.025,
+      "hits": 6621,
+      "overlayPixelsChanged": true,
+      "keyboardToggle": true,
+      "framePauseAndStep": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "batches": 240,
+      "pairs": 60,
+      "medianMs": 0.008,
+      "p95Ms": 0.025,
+      "hits": 6621,
+      "overlayPixelsChanged": true,
+      "keyboardToggle": true,
+      "framePauseAndStep": true,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "batches": 240,
+      "pairs": 60,
+      "medianMs": 0.017,
+      "p95Ms": 0.017,
+      "hits": 6621,
+      "overlayPixelsChanged": true,
+      "keyboardToggle": true,
+      "framePauseAndStep": true,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "pass": true,
+  "results": {
+    "distinctActualRegistryCardsAndNativeSvg": true,
+    "cooperativeMainThreadTicks": 4,
+    "styleControlsPreserveMix": {
+      "matrixAmberDifferent": true,
+      "scanline0vs100Different": true,
+      "logoOnOffDifferent": true
+    },
+    "cancelPreservesLastCompletedAndReleasesStagingCanvas": true,
+    "exportFailureRetryAndUrlCleanup": true,
+    "staleEncodedBlobCannotDownload": true,
+    "catalogAndCanvasFailuresPreservePreview": true,
+    "unavailableIconsGracefulFallback": true,
+    "nativeKeyboardMobileLayouts": [
+      320,
+      375,
+      430,
+      850,
+      1440
+    ],
+    "reducedMotionStillRendersStaticWallpaper": true,
+    "servedSha256": "3a3c7ddfed4ddc778b2a6cb025c18385956b9da3fd1bcbe25852a728eab5da67"
+  },
+  "exports": [
+    {
+      "name": "desktop-synthwave",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1831723,
+      "decodedRgbaSha256": "18ebd0f20822b5420c777e654c5ddfe1ff27565ad2b4c06e49131eb5f94c07b5",
+      "suggestedFilename": "arcadeverse-1920x1080-synthwave.png"
+    },
+    {
+      "name": "uhd-synthwave",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 5580677,
+      "decodedRgbaSha256": "34f6fb4086487fda0fade126a6789d689814d9c4e7becd35bb1ed562e280921b",
+      "suggestedFilename": "arcadeverse-3840x2160-synthwave.png"
+    },
+    {
+      "name": "phone-synthwave",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 1907509,
+      "decodedRgbaSha256": "6e193dfd3cd7e204ab0636e1c37c282eb2876c4cbecb0eba52757f7371082135",
+      "suggestedFilename": "arcadeverse-1080x1920-synthwave.png"
+    },
+    {
+      "name": "phone-retry",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 1907509,
+      "decodedRgbaSha256": "6e193dfd3cd7e204ab0636e1c37c282eb2876c4cbecb0eba52757f7371082135",
+      "suggestedFilename": "arcadeverse-1080x1920-synthwave.png"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "fixture": "Actual docs/catalog, native Canvas/SVG decode/WebCrypto/PNG encoder/download/decoder. Existing Lucide CDN is served from its exact captured response; Google Fonts are omitted. Slow native SVG delivery is injected only for cancellation. Failure injections are explicitly scoped to error-path cases."
+}
