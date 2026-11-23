@@ -1,0 +1,18 @@
+{
+  "issue": "https://github.com/DebasmitaBose0/ArcadeVerse/issues/1418",
+  "head": "2e06e694490cfc53a8afddd0f9dc8eaf4e216cb8",
+  "parent": "e3861c326b4a29837593e17c06863fc3e91dad5d",
+  "notes": [
+    "Frame timing measured in Chrome locally at390 and1280 CSS pixels.",
+    "Full catalog app.js syntax error exists identically on parent. Toggle works independently.",
+    "Artistic gravitational model with radial inverse displacement and illustrative Doppler disk shading."
+  ],
+  "files": {
+    "lensing-browser.json": "c49b86c95395c4cc0c051721a1340de564e9e3804514c5ee153bf0920bf654cf",
+    "browser.mjs": "14a24b7007a42429afeeecfc00fd4f437fd1ef260553cc50c8e2dd52fb3971aa",
+    "lensing-1280.png": "35bd23192811cbe9f9cb06436c696b0c28d919354cf17d455f03e172df7d7c19",
+    "unit.log": "8acbfc48f14c1ea1aadc30a5acdede8855bbd13960ca4280176ec5bc0dacfb32",
+    "lensing-390.png": "cc7b7ade63f03b1f62fc9afc0c05961e886e1790431330881a92d98a124537e5",
+    "parent-app.log": "ecaed83c4f8dd3d36d25d7d6b2aef595a77495310132c0914e18e0b4ede4a14f"
+  }
+}

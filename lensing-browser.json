@@ -1,0 +1,36 @@
+[
+  {
+    "width": 390,
+    "renderP95ms": 2.7000000178813934,
+    "medianFrameIntervalMs": 16.700000000000045,
+    "pixels": {
+      "nonBlack": 4709,
+      "size": [
+        130,
+        300
+      ]
+    },
+    "keyboard": true,
+    "pointer": true,
+    "reducedMotionPaused": true,
+    "disableReleasedBuffer": true,
+    "violations": []
+  },
+  {
+    "width": 1280,
+    "renderP95ms": 4.299999982118607,
+    "medianFrameIntervalMs": 16.699999999999818,
+    "pixels": {
+      "nonBlack": 12428,
+      "size": [
+        320,
+        225
+      ]
+    },
+    "keyboard": true,
+    "pointer": true,
+    "reducedMotionPaused": true,
+    "disableReleasedBuffer": true,
+    "violations": []
+  }
+]

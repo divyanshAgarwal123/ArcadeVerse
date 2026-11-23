@@ -1,0 +1,12 @@
+✔ deflection is radial, symmetric and inversely proportional to radius (1.704708ms)
+✔ approaching side has stronger beaming at equal spiral phase (0.14725ms)
+✔ starfield is deterministic and opaque (12.233917ms)
+✔ renderer reuses its typed buffer, shadows singularity, and responds to dragging (5.835875ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 146.923625
