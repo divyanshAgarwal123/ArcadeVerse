@@ -1,0 +1,16 @@
+{
+  "issue": "https://github.com/DebasmitaBose0/ArcadeVerse/issues/1405",
+  "head": "435d959820a0b83cde25088539b3af45eebe822f",
+  "parent": "e3861c326b4a29837593e17c06863fc3e91dad5d",
+  "tests": "Five Node tests, two Chromium widths, native keyboard/pointer, complete playback, stop, invalid input, actual OfflineAudioContext render, axe no violations.",
+  "limitation": "npm test stops on existing parent assets/js/app.js syntax error at line 7012; parent file byte identical.",
+  "files": {
+    "morse-repo-tests.log": "608b21aa858cfdd6db83c77f79818bf1c88829b1894bc7d929d24f83fcb073e1",
+    "morse-1280.png": "1ebd390ab440da6ee73cf734dc8f6ee22c349cfd76897541f375cf82292e58ca",
+    "browser.mjs": "1c7714f7370191c615db827215b3e8e184e248331267ddbe02acdba6e32f530d",
+    "morse-390.png": "e469a90d5315533099352d49973c0e1789a72c92d7ece649cb3e4f351333bb58",
+    "morse-browser.json": "ed30002da51d8f249b4293db15ba0b48cd06e59671c4629cb789e669e047bc47",
+    "morse-parent-catalog.log": "45c1cee1036459ff2d81eca834dd2ddaef1df04cecf5429dc74eacf5bb0408ca",
+    "morse-unit.log": "475db5f21656d78c7807b03e52396debbac3f41c74825ca1d69f9907554118ab"
+  }
+}

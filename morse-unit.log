@@ -1,0 +1,13 @@
+✔ international alphabet and digits round trip (1.152375ms)
+✔ word, letter and element gaps have independent timing (1.003375ms)
+✔ PARIS standard word occupies 50 units including trailing word gap (0.129625ms)
+✔ bad characters and malformed symbols are rejected (0.245ms)
+✔ envelope has a five millisecond attack and release and exact silent end (0.150417ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 123.206917

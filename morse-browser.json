@@ -1,0 +1,28 @@
+[
+  {
+    "width": 390,
+    "keyboardDecode": "E",
+    "translation": true,
+    "offlineAudio": {
+      "peak": 0.20000000298023224,
+      "jump": 0.017011746764183044,
+      "silent": 0,
+      "crossings": 32
+    },
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 1280,
+    "keyboardDecode": "E",
+    "translation": true,
+    "offlineAudio": {
+      "peak": 0.20000000298023224,
+      "jump": 0.017011746764183044,
+      "silent": 0,
+      "crossings": 32
+    },
+    "violations": [],
+    "errors": []
+  }
+]
